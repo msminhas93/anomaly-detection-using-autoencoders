@@ -37,11 +37,11 @@ if __name__ == "__main__":
                         help="Please specify the number of epochs")
     parser.add_argument('--train_batch_size',
                         type=int,
-                        default=1,
+                        default=4,
                         help="Please specify the batch_size")
     parser.add_argument('--val_batch_size',
                         type=int,
-                        default=1,
+                        default=4,
                         help="Please specify the batch_size")
 
     parser.add_argument(
@@ -57,8 +57,7 @@ if __name__ == "__main__":
         '--save_graph', action='store_true',
         help="Specify this if you want to save the network graph.")
 
-    args = parser.parse_args(['--train_dir',r'C:\Users\m.minhas\DeepLearning\Datasets\DAGM\DAGM_classification\Class1AE\Train',
-                              '--val_dir',r'C:\Users\m.minhas\DeepLearning\Datasets\DAGM\DAGM_classification\Class1AE\Test'])
+    args = parser.parse_args()
 
     optimizer = Adam
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
