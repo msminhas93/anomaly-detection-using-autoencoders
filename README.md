@@ -1,6 +1,6 @@
 This is the implementation of [Semi-supervised Anomaly Detection using AutoEncoders](https://arxiv.org/abs/2001.03674 "Semi-supervised Anomaly Detection using AutoEncoders")
 
-The hypothesis of the paper is tha an AutoEncoder trained on just the defect free or normal samples will fail to reconstruct the images that have defects in it since those were not seen during training. This will lead to large residuals which can be then be used to segment the anomaly.
+The hypothesis of the paper is that an AutoEncoder trained on just the defect free or normal samples will fail to reconstruct the images that have defects in it since those were not seen during training. This will lead to large residuals which can be then be used to segment the anomaly.
 
 For this repository the dataset needs to be organised as:
 ```
