@@ -30,4 +30,4 @@ Tensorboard 2.1.0
 
 An example segmentation output of AutoEncoder trained on the [DAGM dataset](https://hci.iwr.uni-heidelberg.de/content/weakly-supervised-learning-industrial-optical-inspection "DAGM dataset") is shown below. The model was trained on the Class8 and trained for 25 epochs. The best model was kept based on the lowest mean squared error value.
 
-![Sample segmentation output]("image/sample_detection.png")
+![Sample segmentation output](image/sample_detection.png)
