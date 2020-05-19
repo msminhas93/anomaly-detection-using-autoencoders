@@ -81,7 +81,7 @@ def train(model, optimizer, loss_fn, train_loader, val_loader,
             x, _ = batch
             x = x.to(device)
             y = model(x)
-            loss = loss_fn(y,y)
+            loss = loss_fn(y,x)
             return loss.item()
 
     trainer = Engine(process_function)
